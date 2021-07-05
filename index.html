@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="pviewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reapers' WhiteBoard</title>
+  <script src="https://use.fontawesome.com/76d109b605.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+  body{
+    width: fit-content;
+    height: fit-content;
+  }
+    .zoom {
+  transition: transform .2s;
+  border-radius: 50px;
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 10px;
+}
+.zoom1 {
+  transition: transform .2s;
+  border-radius: 50px;
+  margin-left: 10px;
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: #000;
+  text-align: center;
+  padding-left: 600px ;
+  border-radius: 100px;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+ }
+ .zoom1:hover {
+  transform: scale(1.1);
+ }
+    </style> 
+    <header>
+        <div class="text">
+            <img src="Reapers.png" id="btn" class = "zoom1" style="position: fixed; padding: 10px ;border-radius: 100px; bro"width="200px" height="50px"> </div>
+    </header>
+    <div class="footer">
+        <p><strong>Made with ❤️ by Reapers Team!</strong></p>
+      </div>
+<body>
+  <canvas></canvas>
+  <main>
+    <div class="zoom" onclick="change_color(this)" style="background: blue;"></div>
+
+    <div class="zoom" onclick="change_color(this)" style="background: red;"></div>
+
+    <div class="zoom" onclick="change_color(this)" style="background: black;"></div>
+    <div class="zoom" onclick="change_color(this)" style="background: white;"> 
+      
+    </div>
+    <section class="thickness">
+      <input type="number" class="stroke-weight" value="3" />
+    </section>
+    <button class="clear">X</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

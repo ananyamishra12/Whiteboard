@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffff;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+  }
+  main {
+    position: fixed;
+    padding-top: 10px;
+    top: 36%;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 230px;
+    background: lightgray;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 20px;
+  }
+  
+  main section {
+    display: block;
+    margin: 15px auto;
+    width: 30px;
+    height: 30px;
+  }
+  
+  main .colors-black {
+   background-color: black;
+   border-radius: 50px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+  }
+  
+  main .colors-red {
+   background-color: red;
+   border-radius: 50px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+  }
+  
+  main .colors-blue {
+   background-color: blue;
+   border-radius: 50px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+  }
+  
+  main .colors-black .color-picker-black {
+    display: none;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    background-color: black; 
+  }
+  
+  main .colors-black.color-picker-black:focus {
+    display: block;
+  }
+  
+  main .colors-black:hover .color-picker-black {
+    display: block;
+  }
+  main .colors-blue .color-picker-blue {
+    display: none;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 55%;
+    left: 30px;
+    transform: translateY(-50%);
+    background-color: blue; 
+    }
+  
+  main.colors-blue .color-picker-blue:focus {
+    display: block;
+  }
+  
+  main.colors-blue:hover .color-picker-blue {
+    display: block;
+  }
+  main.colors-red .color-picker-red {
+    display: none;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    transform: translateY(-50%);
+    
+  }
+  
+  main.colors-red.color-picker-red:focus {
+    display: block;
+  }
+  
+  main .colors-red:hover.color-picker-red {
+    display: block;
+  }
+  
+  main .thickness {
+    position: relative;
+    background-color: #F3F3F3;
+    border-radius: 50px;
+  }
+  
+  main .thickness::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #000000;
+  }
+  
+  main .thickness .stroke-weight {
+    display: none;
+    position: absolute;
+    width: auto;
+    height: 25px;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  main .thickness .stroke-weight:focus {
+    display: block;
+  }
+  
+  main .thickness:hover .stroke-weight {
+    display: block;
+    background-color: lightgray;
+    color: black;
+    width: 100px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+  }
+  main .clear {
+     position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    color: #171717;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #FFCE00;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .text{
+    padding-left: 50px;
+  }
+  #sourceMappingURL= style.css.map;
